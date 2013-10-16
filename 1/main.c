@@ -2,9 +2,11 @@
 #include "sueldo.h"
 
 float main(){
-  //int a;
-  //a = 1;
-  //sueldo(5,8);
-  //printf("%d", a );
+
+  int horas;
+  float pagohora,total;
+
+  total = sueldo(horas,pagohora);
+  printf("%f\n",total);
 
 }
