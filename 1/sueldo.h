@@ -3,9 +3,9 @@
 
 //Constantes de Horas
 
-#define H_SEMANA  40    //Semana Laboral
+#define H_SEMA    40    //Semana Laboral
 #define H_EXT1    5     //Primeras horas extras
-#define H_SEMAE   (H_SEMANA + H_EXT1)    //Limite inferior de segundo grupo
+#define H_SEMAE   (H_SEMA + H_EXT1)    //Limite inferior de segundo grupo
 #define H_MAX     60    //Número máximo de horas extras
 #define I_EXT     1.5   //50% adicional, primeras grupo
 #define I_EXT1    1.65  //65% adicional, segundas grupo
@@ -31,5 +31,5 @@ Regresa
   en caso de ser negativo
 */
 
-float sueldo(int horas, float pahohora);
+float sueldo(int horas, float pagohora);
 #endif
