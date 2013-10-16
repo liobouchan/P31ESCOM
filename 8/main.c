@@ -1,63 +1,43 @@
 #include <stdio.h>
+#include "iguales.h"
+#include <math.h>
 
-main(){
+int main(){
+
+  int a,b,c,d;
+  
+  //Asignacion de valores.
+  a=1; b=2; c=3; d=4;
 /*
-  int a,b,c,d,w,x;
-  
-  //Asignacion de valores.
-  a=1; b=1; c=1; d=1;
-
-  if(a==b){
-    w=2;
-    printf("%d\n",w);
-  }else if(c==d){
-    w=2;
-    printf("%d\n",w);
-  }else if(a==c){
-    w=2;
-    printf("%d\n",w);
-  }else if(b==d){
-    w=2;
-    printf("%d\n",w);
-  }else if(a==d){
-    w=2;
-    printf("%d\n",w);
-  }else if(b==c){
-    w=2;
-    printf("%d\n",w);
-  }else if(a==b && b==c){
-    w=3;
-    printf("%d\n",w);
-  }else if(a==b && b==d){
-    w=3;
-    printf("%d\n",w);
-  }else if(a==c && c==d){
-    w=3;
-    printf("%d\n",w);
-  }else if(b==c && c==d){
-    w=3;
-    printf("%d\n",w);
-  }else if(a==b && b==c && c==d){
-    w=4;
-    printf("%d\n",w);
-  }else{ 
-    w=0;
-    printf("%d\n",w);
+int repeticiones(int a, int b, int c, int d){  
+  int num;
+  if(iguales4(a,b,c,d)==1){
+    num=4;
+    return num;
+    //printf("%d\n", num);
+  }else if (iguales3(a,b,c,d)==1){
+    num=3;
+    return num;
+    //printf("%d\n", 3);
+  }else if(iguales(a,b,c,d)==1){
+    num=2;
+    return num;
+    //printf("%d\n", 2);
+  }else{
+    num=0;
+    return num;
+    printf("%d\n", 0);
   }
-  */
+}
+*/
+printf("El numero de numeros iguales en(%d,%d,%d,%d)==%d\n",a,b,c,d,repeticiones(a,b,c,d));
+d=1;
+printf("El numero de numeros iguales en(%d,%d,%d,%d)==%d\n",a,b,c,d,repeticiones(a,b,c,d));
+c=2;
+printf("El numero de numeros iguales en(%d,%d,%d,%d)==%d\n",a,b,c,d,repeticiones(a,b,c,d));
+a=3; b=3; d=3; c=3;
+printf("El numero de numeros iguales en(%d,%d,%d,%d)==%d\n",a,b,c,d,repeticiones(a,b,c,d));
 
-  int a,b,c,d,w,x;
-  
-  //Asignacion de valores.
-  a=1; b=2; c=3; d=1;
 
-  int distinto3(int a, int b, int c){
-    int d1y2 = a!=b;
-    int d1y3 = a!=c;
-    int d2y3 = b!=c;
-    return d1y2 && d1y3 && d2y3;
-  }
-
-  printf("%d\n",distinto3(a,b,c) );
-
+  return 0;
 }
