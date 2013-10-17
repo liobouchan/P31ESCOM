@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "valor.h"
 
-int letras(char* f, char* b, char* c){
+int letras(char f, char b, char c){
  int valor;
  char a=a;
  char e=e;
